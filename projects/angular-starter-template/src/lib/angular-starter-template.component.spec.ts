@@ -8,10 +8,9 @@ describe('AngularStarterTemplateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AngularStarterTemplateComponent]
-    })
-    .compileComponents();
-    
+      imports: [AngularStarterTemplateComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AngularStarterTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -4,13 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-angular-starter-template',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      angular-starter-template works!
-    </p>
-  `,
-  styles: ``
+  template: ` <p>angular-starter-template works!</p> `,
+  styles: ``,
 })
-export class AngularStarterTemplateComponent {
-
-}
+export class AngularStarterTemplateComponent {}

@@ -6,6 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "format:check": "npm run format:check-lib && npm run format:check-showcase",
+    "format:write": "npm run format:write-lib && npm run format:write-showcase",
+    "format:write-lib": "prettier --write \"projects/angular-starter-template/**/*.{ts,js,json,html,scss}\"",
+    "format:write-showcase": "prettier --write \"projects/angular-starter-template-showcase/**/*.{ts,js,json,html,scss}\"",
     "test": "ng test",
     "serve:ssr:angular-starter-template-showcase": "node dist/angular-starter-template-showcase/server/server.mjs"
   },
@@ -40,6 +44,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^17.1.0",
+    "prettier": "^3.2.5",
     "typescript": "~5.2.2"
   }
 }
